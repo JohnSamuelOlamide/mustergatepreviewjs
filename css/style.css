@@ -17,6 +17,7 @@ html {
 body {
   font-family: "Poppins", Jost;
   background: rgb(245, 245, 245);
+  width: 100vw;
   overflow-x: 0;
 }
 .header {
