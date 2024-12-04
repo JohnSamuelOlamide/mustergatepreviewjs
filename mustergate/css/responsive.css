@@ -1,0 +1,54 @@
+@media (min-width: 992px) {
+  .about .about-content-wrapper {
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-areas:
+      "vision core-values"
+      "mission core-values";
+  }
+  .about .about-content {
+    height: auto;
+  }
+  .about-vision {
+    grid-area: vision;
+  }
+  .about-core-values {
+    grid-area: core-values;
+  }
+  .about-mission {
+    grid-area: mission;
+  }
+}
+@media (min-width: 768px) {
+  .header .navbar {
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .header .navbar {
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .desktop-navbar {
+    display: block;
+  }
+  .mobile-nav-overlay {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: none;
+  }
+  .desktop-navbar {
+    min-width: 35%;
+  }
+  .desktop-navbar .desktop-navbar-items-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .desktop-navbar .desktop-navbar-items-wrapper .nav-item {
+    color: white;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustergate Technlogy Ltd</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/repeated-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar">
+        <a href="#header" class="logo">
+          <img class="logo-img" src="./assets/images/logo2.svg" alt="" />
+          <span class="logo-text uppercase">
+            Mustergate <br />
+            Technology Ltd
+          </span>
+        </a>
+        <!-- Desktop navbar -->
+        <div class="desktop-navbar">
+          <div class="desktop-navbar-items-wrapper">
+            <a href="#header" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#products" class="nav-item">Products</a>
+            <a href="#contact" class="nav-item">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile navbar -->
+
+        <div class="mobile-nav-toggle">
+          <i class="bx bx-menu" id="hamburger"></i>
+          <input type="checkbox" id="mobile-nav-toggle" />
+        </div>
+        <div class="mobile-nav-overlay">
+          <div class="mobile-nav-items-wrapper">
+            <a onclick="hideMobileNav()" href="#header" class="nav-item"
+              >Home</a
+            >
+            <a onclick="hideMobileNav()" href="#about" class="nav-item"
+              >About</a
+            >
+            <a onclick="hideMobileNav()" href="#products" class="nav-item"
+              >Products</a
+            >
+            <a onclick="hideMobileNav()" href="#contact" class="nav-item"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="header-center-text text-center">
+        <h1 class="uppercase">Mustergate</h1>
+        <h3 class="uppercase">minds at work</h3>
+        <!-- <a href="#" class="btn btn-1 uppercase">
+          <span class=""></span>
+          <span class=""></span>
+          <span class="">Button</span>
+        </a> -->
+
+        <a href="#" class="btn uppercase"> Button </a>
+      </div>
+    </header>
+    <section class="section about" id="about">
+      <h2 class="section-title about-title uppercase">About</h2>
+      <div class="about-content-wrapper">
+        <div class="about-content about-vision">
+          <h3>Our Vision</h3>
+          <p class="about-content-body">
+            An enterprise where innovation drives action.
+          </p>
+        </div>
+        <div class="about-content about-mission">
+          <h3>Our Mission</h3>
+          <p class="about-content-body">
+            To creatively add value to nature’s resources by employing
+            technology and business acumen
+          </p>
+        </div>
+        <div class="about-content about-core-values">
+          <h3>Core Values</h3>
+          <ol class="about-content-body">
+            <li>
+              Prudence: Exercising great hindsight, insight, and foresight in
+              actions and judgment.
+            </li>
+            <li>
+              Redundancy: Avoid a single point of failure & minimize downtime
+              while optimizing resource utilization.
+            </li>
+            <li>
+              Adaptive: Ability to maneuver around constraints without
+              compromising integrity to meet goals or objectives.
+            </li>
+            <li>
+              Resilience: Ability to stay responsive under load or stress.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="section products" id="products">
+      <h2 class="section-title products-title uppercase">Products</h2>
+      <div class="products-content-wrapper"></div>
+    </section>
+    <section class="section contact" id="contact">
+      <h2 class="section-title products-title uppercase">Contact</h2>
+    </section>
+    <footer class="footer">
+      <div class="footer-content-wrapper">
+        <p>Copyright © <a href="#header">Mustergate Technologies Limited</a></p>
+      </div>
+    </footer>
+    <script>
+      const toggleCheckbox = document.getElementById("mobile-nav-toggle");
+      const hamburger = document.getElementById("hamburger");
+      const navItems = document.querySelectorAll(".hamburger");
+      const mobileNav = document.querySelector(".mobile-nav-overlay");
+
+      toggleCheckbox.addEventListener("change", function () {
+        if (toggleCheckbox.checked) {
+          hamburger.classList.remove("bx-menu"); // Remove bx-menu class
+          hamburger.classList.add("bx-x"); // Add bx-x class
+        } else {
+          hamburger.classList.remove("bx-x"); // Remove bx-x class
+          hamburger.classList.add("bx-menu"); // Add bx-menu class
+        }
+      });
+      function hideMobileNav() {
+        toggleCheckbox.checked = false; // Hide mobileNav
+        hamburger.classList.add("bx-menu");
+        hamburger.classList.remove("bx-x"); // Remove bx-x class
+      }
+      // hide mobile nav on scroll
+      var lastScrollY = window.scrollY;
+      window.addEventListener("scroll", () => {
+        if (window.scrollY !== lastScrollY) {
+          hideMobileNav();
+        }
+        lastScrollY = window.scrollY; // Update the last scroll position
+      });
+    </script>
+  </body>
+</html>
