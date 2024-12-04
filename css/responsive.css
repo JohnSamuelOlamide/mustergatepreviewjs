@@ -8,6 +8,9 @@
   .header .header-center-text h1 {
     font-size: 55px;
   }
+  .header .header-center-text h3 {
+    font-size: 16px;
+  }
   .about .about-content {
     height: auto;
   }
