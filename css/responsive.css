@@ -5,6 +5,9 @@
       "vision core-values"
       "mission core-values";
   }
+  .header .header-center-text h1 {
+    font-size: 55px;
+  }
   .about .about-content {
     height: auto;
   }
