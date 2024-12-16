@@ -55,6 +55,8 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Mobile navbar */
@@ -124,7 +126,7 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
 
 .header .header-center-text {
   /* padding: 15% 0 0; */
-  transform: translateY(31%);
+  transform: translateY(76%);
   color: var(--white);
 }
 .header .header-center-text h1 {
