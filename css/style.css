@@ -51,6 +51,11 @@ body {
 .header .navbar img.logo-img {
   height: 40px;
 }
+.logo-text{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
 /* Mobile navbar */
 .mobile-nav-toggle {
