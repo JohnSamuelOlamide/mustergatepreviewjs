@@ -23,8 +23,7 @@ body {
 .header {
   min-height: 500px;
   width: 100%;
-  background:black;
-  /* background: url("../assets/images/background-5.png") no-repeat; */
+  background: url("../assets/images/background-5.png") no-repeat;
   background-size: cover;
 }
 .header .navbar {
