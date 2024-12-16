@@ -40,6 +40,8 @@ body {
   user-select: none;
   transition: 0.25s ease-in-out;
   cursor: pointer;
+  display: grid;
+  place-content: center;
 }
 .header .navbar .logo:hover {
   filter: grayscale(50%);
