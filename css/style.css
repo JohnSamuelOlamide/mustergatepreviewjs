@@ -16,7 +16,7 @@ html {
 }
 body {
   font-family: "Raleway", Poppins;
-  background: rgb(245, 245, 245);
+  background: white;
   width: 100%;
   overflow-x: 0;
 }
@@ -152,9 +152,9 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
   margin: auto;
   padding: 3rem 0;
 }
-.section .section-title {
+.section-title {
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   color: var(--purple);
   display: inline-block;
 }
@@ -166,9 +166,10 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
   width: 100%;
 }
 .about .about-content h3 {
-  color: black;
   font-weight: 700;
+  margin-bottom: 1rem;
   color: var(--purple);
+  display: inline-block;
   text-transform: uppercase;
 }
 .about .about-content p {
