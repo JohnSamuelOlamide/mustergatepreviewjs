@@ -167,9 +167,9 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
 }
 .about .about-content h3 {
   color: black;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--purple);
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 .about .about-content p {
   color: rgb(21, 21, 21);
