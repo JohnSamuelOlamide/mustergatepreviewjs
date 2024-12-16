@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", Jost;
+  font-family: "Raleway", Poppins;
   background: rgb(245, 245, 245);
   width: 100%;
   overflow-x: 0;
@@ -50,7 +50,7 @@ body {
 }
 .header .navbar .logo .logo-text {
   text-wrap: nowrap;
-  font-family: "Poppins", Jost;
+  font-family: "Raleway", Poppins;
   color: var(--white);
   font-weight: 500;
   font-size: 15px;
@@ -135,7 +135,7 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
   font-size: 12px;
   letter-spacing: 5px;
   font-weight: normal;
-  font-family: "Jost", Poppins;
+  font-family: "Poppins", Jost;
 }
 .header-center-text .btn {
   margin-top: 30px;
