@@ -219,7 +219,7 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
 }
 /* Contact */
 .contact .contact-content-wrapper a {
-  color: purple;
+  color: var(--base-color);
 }
 .contact .contact-content-wrapper a:hover {
   text-decoration: underline;
