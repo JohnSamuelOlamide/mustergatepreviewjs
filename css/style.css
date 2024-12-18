@@ -20,6 +20,12 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.main{
+  flex-grow: 1;
 }
 .header {
   min-height: 500px;
@@ -87,7 +93,6 @@ body {
   color: var(--purple);
   font-weight: 400;
   padding: 2px 5px;
-  /* width: fit-content; */
   transition: 0.1s;
 }
 .mobile-nav-items-wrapper a.nav-item:hover {
@@ -222,6 +227,8 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
 
 /* footer */
 .footer {
+  flex-shrink: 0;
+
   bottom: 0;
   right: 0;
   display: grid;
