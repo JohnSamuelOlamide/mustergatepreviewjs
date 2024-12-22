@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   align-items: stretch;
 }
-.main{
+.main {
   flex-grow: 1;
 }
 .header {
@@ -198,7 +198,6 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
   display: block;
 }
 .about-core-values u {
-  text-decoration: underline;
   color: var(--base-color);
   font-weight: 500;
 }
