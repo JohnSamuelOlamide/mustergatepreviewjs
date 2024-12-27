@@ -72,8 +72,8 @@ body {
   top: 0;
   /* animation: mobileNavSLideIn 0.45s; */
   opacity: 0;
-  right: -96vw;
-  width: 95vw;
+  right: -101vw;
+  width: 100vw;
   min-height: 500px;
   background: var(--accent-color);
   display: flex;
@@ -90,10 +90,12 @@ body {
   text-align: center;
 }
 .mobile-nav-items-wrapper a.nav-item {
-  font-size: 20px;
-  color: var(--purple);
-  font-weight: 400;
-  padding: 2px 5px;
+  font-family: "Raleway", Poppins;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--base-color);
+  padding: 5px 10px;
   transition: 0.1s;
 }
 .mobile-nav-items-wrapper a.nav-item:hover {
@@ -105,7 +107,7 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
   .mobile-nav-overlay {
     right: 0;
     opacity: 1;
-    display: block;
+    display: flex;
   }
 }
 
@@ -328,12 +330,12 @@ section.coloured-bg .wrapper p {
 @keyframes mobileNavSLideIn {
   0% {
     opacity: 1;
-    display: block;
+    display: flex;
     /* left: 0; */
   }
   75% {
     opacity: 0;
-    display: block;
+    display: flex;
     /* left: 0; */
   }
   100% {
