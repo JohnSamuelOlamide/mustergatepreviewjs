@@ -76,8 +76,9 @@ body {
   width: 95vw;
   min-height: 500px;
   background: var(--accent-color);
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* box-shadow: -3px 3px 8px 0px #00000042; */
   transition: 0.45s ease;
 }
