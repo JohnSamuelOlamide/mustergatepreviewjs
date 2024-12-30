@@ -8,6 +8,8 @@
 :root {
   --base-color: rgb(85, 24, 93);
   --purple: rgb(85, 24, 93);
+  --dark-purple: #220a25;
+  --dark-purple: hsl(293 57% 15% / 1);
   --white: white;
   --accent-color: rgb(236, 182, 2);
 }
@@ -24,6 +26,28 @@ body {
   flex-direction: column;
   align-items: stretch;
 }
+/* Page Loader */
+.page-loader {
+  background: white;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  transition: 0.45s ease;
+  z-index: 100000;
+  display: grid;
+  place-content: center;
+}
+
+.page-loader .spin {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border: 13px solid var(--base-color);
+  border-bottom-color: transparent;
+  border-radius: 5000px;
+  animation: spin 1s linear infinite;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -169,7 +193,7 @@ section.coloured-bg {
   align-items: center;
   /* background: rgb(236, 182, 2); */
   background: #3f3741;
-  background: #220a25;
+  background: var(--dark-purple);
   padding: 4rem 0;
 }
 section.coloured-bg .wrapper {
@@ -312,7 +336,7 @@ section.coloured-bg .wrapper p {
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--accent-color);
-  background: #220a25;
+  background: var(--dark-purple);
   padding: 3rem 0;
 }
 .footer .footer-content-wrapper {
