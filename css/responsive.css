@@ -17,11 +17,15 @@
   .header {
     height: 500px;
   }
-  .header .header-center-text h1 {
-    font-size: 80px;
+  .header .header-center-text {
+    transform: translateY(45%);
+  }
+  .header .header-center-text .logo-text {
+    width: 55%;
   }
   .header .header-center-text h3 {
     font-size: 16px;
+    margin-top: -10px;
   }
   .header .navbar {
     padding: 2.2rem 4rem;
