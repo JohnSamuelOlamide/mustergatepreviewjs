@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
   }
- 
 }
 @media (min-width: 992px) {
   .header {
@@ -21,7 +20,7 @@
     transform: translateY(45%);
   }
   .header .header-center-text .logo-text {
-    width: 55%;
+    max-width: 55%;
   }
   .header .header-center-text h3 {
     font-size: 16px;
