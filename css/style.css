@@ -156,6 +156,7 @@ html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
   line-height: 1;
   font-weight: normal;
   font-family: "Jost", Raleway;
+  margin-top: -2px;
 }
 .header .header-center-text .logo-text {
   max-width: 85%;
