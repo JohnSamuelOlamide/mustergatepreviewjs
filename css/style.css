@@ -319,16 +319,17 @@ section.coloured-bg .wrapper p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--accent-color);
+  border-top: 2px dotted var(--accent-color);
   background: var(--dark-purple);
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .footer .footer-content-wrapper {
   color: white;
   text-align: center;
   font-size: 18px;
+  font-weight: 600;
   max-width: 90%;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 .footer .footer-content-wrapper a {
   color: var(--accent-color);
