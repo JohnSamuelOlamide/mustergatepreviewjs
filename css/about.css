@@ -71,10 +71,10 @@ body {
 /* Main */
 h1 {
   font-size: 40px;
-  padding: 0 15px;
+  padding: 0 100px;
   font-weight: 500;
   text-align: center;
-  margin: 50px auto;
+  margin: 70px auto 15px !important;
   line-height: 1.2;
 }
 h3 {
@@ -90,8 +90,6 @@ h1 span {
   font-style: italic;
   font-weight: 600;
   position: relative;
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
 }
 
 /* easy reward features wrapper */
@@ -102,30 +100,41 @@ h1 span {
   gap: 15px;
 }
 .easy-reward-features-wrapper .feature {
-  background: var(--accent-color);
-  border: 1px solid #55185df4;
-  box-shadow: 3px 6px 0px 0px #55185df4;
-  border-radius: 10px;
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
   padding: 30px 20px;
 }
+
+.easy-reward-features-wrapper .feature .feature-icon {
+  margin-bottom: 15px !important;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 3.591055154800415px 7.84712028503418px 0px #25252514;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.easy-reward-features-wrapper .feature .feature-icon img {
+  height: 40px;
+}
+
 .easy-reward-features-wrapper .feature .feature-text-wrapper {
-  text-align: left;
-  color: white;
+  text-align: center;
+  color: black;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 .easy-reward-features-wrapper .feature .feature-text-wrapper .feature-title {
-  /* text-decoration: underline; */
-  /* color: var(--base-color); */
-  font-weight: 900;
-  /* text-decoration-color: var(--base-color); */
+  color: var(--base-color);
+  font-weight: 700;
 }
 .easy-reward-features-wrapper
   .feature
@@ -136,7 +145,7 @@ h1 span {
 
 .app-download {
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
   background: whitesmoke;
   width: 100%;
   padding: 85px 60px;
@@ -149,12 +158,11 @@ h1 span {
   position: relative;
 }
 .app-download .col-2 img {
-  /* border: 2px solid var(--accent-color); */
   border-radius: 37px;
-  box-shadow: inset 0px 0px 20px 20px var(--base-color);
-  width: 22%;
-  top: -42px;
-  /* margin-left: 50px; */
+  box-shadow: inset 0px 0px 20px 20px var(--base-color),
+    2px 3px 5px 5px #0000002d;
+  height: 150%;
+  top: -20%;
   right: 20%;
   position: absolute;
 }
@@ -168,8 +176,6 @@ h1 span {
   font-size: 3rem;
   color: var(--base-color);
   font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
 }
 .app-download p {
   margin: 10px 0 20px;
