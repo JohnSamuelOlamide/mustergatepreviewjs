@@ -6,13 +6,10 @@
   border: none;
 }
 :root {
-  --base-color: rgb(85, 24, 93);
-  --purple: rgb(85, 24, 93);
-  --dark-purple: #220a25;
-  --dark-purple: #37103c;
+  --base-color: #55185d;
   --dark-purple: #44134a;
   --white: white;
-  --accent-color: rgb(236, 182, 2);
+  --accent-color: #ecb602;
 }
 html {
   scroll-behavior: smooth;
@@ -127,7 +124,7 @@ body {
   transition: 0.1s;
 }
 .mobile-nav-items-wrapper a.nav-item:hover {
-  background: var(--purple);
+  background: var(--base-color);
   color: white;
 }
 
