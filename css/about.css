@@ -159,7 +159,7 @@ h1 span {
   position: relative;
 }
 .app-download .col-2 img {
-  border-radius: 45px;
+  border-radius: 38px;
   box-shadow: inset 0px 0px 20px 20px var(--base-color),
     2px 3px 5px 5px #0000002d;
   height: 150%;
