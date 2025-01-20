@@ -46,6 +46,72 @@ body {
   animation: spin 1s linear infinite;
 }
 
+/* Mobile navbar */
+.mobile-nav-toggle {
+  background: var(--base-color);
+  position: relative;
+  padding: 4px 4px 0px;
+  z-index: 10000;
+  cursor: pointer;
+}
+.mobile-nav-toggle i {
+  color: white;
+  font-size: 1.78rem;
+  transition: 0.3s ease;
+}
+.mobile-nav-toggle input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mobile-nav-overlay {
+  position: absolute;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  right: -101vw;
+  width: 100vw;
+  min-height: 500px;
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: -3px 3px 8px 0px #00000042; */
+  transition: 0.45s ease;
+}
+.mobile-nav-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  text-align: center;
+}
+.mobile-nav-items-wrapper a.nav-item {
+  font-family: "Raleway", Poppins;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--base-color);
+  padding: 5px 10px;
+  transition: 0.1s;
+}
+.mobile-nav-items-wrapper a.nav-item:hover {
+  background: var(--base-color);
+  color: white;
+}
+
+html:has(.header .navbar .mobile-nav-toggle input[type="checkbox"]:checked) {
+  .mobile-nav-overlay {
+    right: 0;
+    opacity: 1;
+    display: flex;
+  }
+}
+
 /* HEader */
 .header {
   width: 100%;
@@ -71,7 +137,7 @@ body {
 /* Main */
 h1 {
   font-size: 40px;
-  padding: 0 100px;
+  padding: 0 5%;
   font-weight: 500;
   text-align: center;
   margin: 70px auto 15px !important;
