@@ -390,6 +390,12 @@ img.store-button {
   }
 }
 @media (min-width: 992px) {
+  .header .header-center-text h3 {
+    font-size: 16px;
+    margin-top: -7px;
+  }
+}
+@media (min-width: 992px) {
   h1 {
     margin: 60px auto 50px;
   }
