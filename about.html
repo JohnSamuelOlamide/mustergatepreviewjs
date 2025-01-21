@@ -27,9 +27,26 @@
     <script src="script.js"></script>
   </head>
   <body>
-    
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-items-wrapper">
+        <a onclick="hideMobileNav()" href="#header" class="nav-item">Home</a>
+        <a onclick="hideMobileNav()" href="/about.html" class="nav-item"
+          >About</a
+        >
+        <a onclick="hideMobileNav()" href="#products" class="nav-item"
+          >Products</a
+        >
+        <a onclick="hideMobileNav()" href="#contact" class="nav-item"
+          >Contact</a
+        >
+      </div>
+    </div>
+
     <header class="header">
-      <i class="bx bx-menu"></i>
+      <div class="mobile-nav-toggle">
+        <i class="bx bx-menu" id="hamburger"></i>
+        <input type="checkbox" id="mobile-nav-toggle" />
+      </div>
       <img src="./assets/images/logo-group.svg" class="header-logo" alt="" />
     </header>
     <main class="main">
@@ -56,7 +73,8 @@
           <div class="feature-text-wrapper">
             <h2 class="feature-title">Pay with points</h2>
             <p class="feature-description">
-              Use your points to shop phone credits, fuel, food items and much more
+              Use your points to shop phone credits, fuel, food items
+              and much more
             </p>
           </div>
         </div>
@@ -108,5 +126,34 @@
         </p>
       </div>
     </footer>
+    <script>
+      const toggleCheckbox = document.getElementById("mobile-nav-toggle");
+      const hamburger = document.getElementById("hamburger");
+      const navItems = document.querySelectorAll(".hamburger");
+      const mobileNav = document.querySelector(".mobile-nav-overlay");
+
+      toggleCheckbox.addEventListener("change", function () {
+        if (toggleCheckbox.checked) {
+          hamburger.classList.remove("bx-menu"); // Remove bx-menu class
+          hamburger.classList.add("bx-x"); // Add bx-x class
+        } else {
+          hamburger.classList.remove("bx-x"); // Remove bx-x class
+          hamburger.classList.add("bx-menu"); // Add bx-menu class
+        }
+      });
+      function hideMobileNav() {
+        toggleCheckbox.checked = false; // Hide mobileNav
+        hamburger.classList.add("bx-menu");
+        hamburger.classList.remove("bx-x"); // Remove bx-x class
+      }
+      // hide mobile nav on scroll
+      var lastScrollY = window.scrollY;
+      window.addEventListener("scroll", () => {
+        if (window.scrollY !== lastScrollY) {
+          hideMobileNav();
+        }
+        lastScrollY = window.scrollY; // Update the last scroll position
+      });
+    </script>
   </body>
 </html>
