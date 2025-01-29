@@ -32,9 +32,6 @@ body {
   flex-grow: 1;
 }
 
-
-
-
 /* ABOUT */
 section.coloured-bg {
   width: 100%;
@@ -61,7 +58,6 @@ section.coloured-bg .wrapper p {
   font-weight: 600;
   line-height: 2;
 }
-
 
 /* ABOUT CONTENT */
 .about-content {
@@ -94,7 +90,7 @@ section.coloured-bg .wrapper p {
   font-weight: 600;
   line-height: 2;
 }
-.about-core-values p{
+.about-core-values p {
   padding-bottom: 11px;
   line-height: 1.5;
 }
