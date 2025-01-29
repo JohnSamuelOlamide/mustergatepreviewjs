@@ -23,3 +23,17 @@ hamburger.addEventListener("change", () => {
     }, 410);
   }
 });
+
+// hide mobile nav on scroll
+
+function hideMobileNav() {
+  document.getElementById("hamburger").checked = false; // Hide mobileNav
+}
+
+var lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+  if (window.scrollY !== lastScrollY) {
+    hideMobileNav();
+  }
+  lastScrollY = window.scrollY; // Update the last scroll position
+});
