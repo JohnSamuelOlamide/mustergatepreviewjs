@@ -8,3 +8,17 @@ window.addEventListener("load", () => {
     loader.style.display = "none"; // Remove from view
   }, 1000); // Matches fade-out duration (optional)
 });
+
+const nav = document.querySelector("nav");
+const hamburger = document.getElementById("hamburger");
+const hamburgerContainer = document.querySelector(".hamburger");
+
+hamburger.addEventListener("change", () => {
+  if (hamburger.checked) {
+    hamburgerContainer.classList.add(".checked-hamburger");
+    nav.classList.add(".checked");
+  } else {
+    hamburgerContainer.classList.remove(".checked-hamburger");
+    nav.classList.remove(".checked");
+  }
+});

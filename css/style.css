@@ -50,7 +50,6 @@ body {
   display: none;
 }
 header {
-  overflow-x: hidden !important;
   position: relative;
   width: 100%;
   background: var(--base-color);
