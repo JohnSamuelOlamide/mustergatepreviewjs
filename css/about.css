@@ -94,7 +94,10 @@ section.coloured-bg .wrapper p {
   font-weight: 600;
   line-height: 2;
 }
-
+.about-core-values p{
+  padding-bottom: 11px;
+  line-height: 1.5;
+}
 .about-core-values span {
   font-weight: 700;
   color: var(--accent-color);
