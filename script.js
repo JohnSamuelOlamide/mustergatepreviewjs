@@ -11,14 +11,15 @@ window.addEventListener("load", () => {
 
 const nav = document.querySelector("nav");
 const hamburger = document.getElementById("hamburger");
-const hamburgerContainer = document.querySelector(".hamburger");
 
 hamburger.addEventListener("change", () => {
   if (hamburger.checked) {
-    hamburgerContainer.classList.add(".checked-hamburger");
-    nav.classList.add(".checked");
+    setTimeout(() => {
+      nav.style.display = "block";
+    }, 410);
   } else {
-    hamburgerContainer.classList.remove(".checked-hamburger");
-    nav.classList.remove(".checked");
+    setTimeout(() => {
+      nav.style.display = "none";
+    }, 410);
   }
 });
