@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Mustergate Ltd</title>
+    <title>Mustergate Technlogy Ltd</title>
     <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/repeated-styles.css" />
 
     <!-- Fonts -->
@@ -26,146 +28,113 @@
     <!--Page Loader Animation JS -->
     <script src="script.js"></script>
   </head>
+
   <body>
-    <div class="mobile-nav-overlay">
-      <div class="mobile-nav-items-wrapper">
-        <a onclick="hideMobileNav()" href="/index.html" class="nav-item"
-          >Home</a
-        >
-        <a onclick="hideMobileNav()" href="/about.html" class="nav-item"
-          >About</a
-        >
-        <a
-          onclick="hideMobileNav()"
-          href="/index.html#products"
-          class="nav-item"
-          >Products</a
-        >
-        <a onclick="hideMobileNav()" href="/index.html#contact" class="nav-item"
-          >Contact</a
-        >
-      </div>
+    <div class="page-loader" id="page-loader">
+      <span class="spin"></span>
     </div>
 
-    <header class="header">
-      <div class="mobile-nav-toggle">
-        <i class="bx bx-menu" id="hamburger"></i>
-        <input type="checkbox" id="mobile-nav-toggle" />
-      </div>
-      <div class="header-center-text text-center">
-        <img
-          class="header-logo"
-          src="./assets/images/logo-group.svg"
-          alt="MUSTERGATE"
-        />
-        <h3 class="uppercase">minds at work</h3>
+    <header>
+      <img class="logo" src="./assets/images/logo3.svg" alt="Mustergate" />
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" name="hamburger" />
+        <label for="hamburger">
+          <span class="dash-1"></span>
+          <span class="dash-2"></span>
+          <span class="dash-3"></span>
+        </label>
       </div>
     </header>
+    <nav class="nav">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <!-- <a href="#">Products</a> -->
+      <a href="#">Contact</a>
+    </nav>
     <main class="main">
-      <h1>
-        Earn rewards on your everyday purchases with <span>EasyRewards</span>
-      </h1>
-      <!-- <h3>Enjoy more ways to shop, earn and everywhere, every day.</h3> -->
-      <div class="easy-reward-features-wrapper">
-        <div class="feature">
-          <div class="feature-icon">
-            <img src="./assets/images/icons/visid-icon-1.png" alt="" />
-          </div>
-          <div class="feature-text-wrapper">
-            <h2 class="feature-title">Deals from our partners' stores</h2>
-            <p class="feature-description">
-              Get special prices AND earn points on your everyday purchases
-            </p>
-          </div>
+      <section class="about-container coloured-bg" id="about">
+        <div class="about-wrapper wrapper">
+          <h1 class="about-heading">About<span>.</span></h1>
+          <p>
+            At Mustergate, we are driven by a singular vision: to revolutionize
+            businesses across Africa through the strategic application of
+            technology. We believe that innovation and digital transformation
+            are key to unlocking the full potential of the African continent.
+            With technology as our cornerstone, we work tirelessly to equip
+            businesses with the tools and solutions they need to thrive in an
+            ever-evolving global marketplace. By understanding Africa's unique
+            challenges and opportunities, we focus on fostering innovation,
+            advancing digital infrastructure, and creating an ecosystem where
+            businesses can thrive.
+          </p>
         </div>
-        <div class="feature">
-          <div class="feature-icon">
-            <img src="./assets/images/icons/visid-icon-2.png" alt="" />
-          </div>
-          <div class="feature-text-wrapper">
-            <h2 class="feature-title">Pay with points</h2>
-            <p class="feature-description">
-              Use your points to shop phone credits, fuel, food items
-              and much more
-            </p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-icon">
-            <img src="./assets/images/icons/visid-icon-3.png" alt="" />
-          </div>
-          <div class="feature-text-wrapper">
-            <h2 class="feature-title">Do more with points</h2>
-            <p class="feature-description">
-              charitable giving, use your points for what matters most.
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
 
-      <div class="app-download">
-        <div class="col-1">
-          <h2>Download our app!</h2>
-          <p>Get the EasyRewards app on your smartphone</p>
-          <div class="store-buttons">
-            <a href="#" class="app-store-button apple-button">
-              <img
-                class="store-button"
-                src="./assets/images/play-store.png"
-                alt="Google App Store"
-              />
-            </a>
-            <a href="#" class="app-store-button google-button">
-              <img
-                class="store-button"
-                src="./assets/images/app-store.png"
-                alt="App Store"
-              />
-            </a>
+      <section class="about-content">
+        <div class="wrapper">
+          <div class="about-vision about-faction">
+            <h2>Vision</h2>
+            <p class="about-content-body">
+              We are a company where innovation drives our actions. We envision
+              a future where technology is the driving force behind business
+              growth, empowering organizations across Africa to scale, adapt,
+              and succeed in the digital era.
+            </p>
+          </div>
+          <div class="about-mission about-faction">
+            <h2>Mission</h2>
+            <p class="about-content-body">
+              To creatively add value to nature's resources by employing
+              technology and business acumen. We strive to harness the power of
+              innovation in order to optimize resource usage, and create
+              sustainable solutions that will drive economic and
+              environmental progress.
+            </p>
+          </div>
+          <div class="about-core-values about-faction">
+            <h2>Core Values (O-REAL)</h2>
+            <p><u>Openness - </u> Create the necessary trust</p>
+            <p>
+              <u>Responsibility - </u> If it is to be, I have a role to play
+            </p>
+            <p><u>Ethics - </u> Actions guided by morality and pure motives</p>
+            <p><u>Accountability - </u> Steward of resources</p>
+            <p><u>Leadership - </u> Find the right way</p>
           </div>
         </div>
-
-        <div class="col-2">
-          <img src="./assets/images/phone.svg" alt="EasyRewards App" />
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
-      <div class="footer-content-wrapper">
-        <p>
-          Copyright &copy 2024
-          <a href="/index.html">Mustergate Technologies Limited</a>
-        </p>
+      <!-- <div class="footer-col-1 nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col-2">
+        <h3>CONTACT</h3>
+        <a href="mailto:info@mustergate.com">info@mustergate.com</a>
+      </div>-->
+      <div class="footer-container">
+        <div class="footer-upper">
+          <div class="nav-links">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>CONTACT</h3>
+            <a href="mailto:info@mustergate.com">info@mustergate.com</a>
+          </div>
+        </div>
+        <div class="footer-lower">
+          <p class="copyright">
+            ©Mustergate technology Ltd. All rights reserved
+          </p>
+        </div>
       </div>
     </footer>
-    <script>
-      const toggleCheckbox = document.getElementById("mobile-nav-toggle");
-      const hamburger = document.getElementById("hamburger");
-      const navItems = document.querySelectorAll(".hamburger");
-      const mobileNav = document.querySelector(".mobile-nav-overlay");
-
-      toggleCheckbox.addEventListener("change", function () {
-        if (toggleCheckbox.checked) {
-          hamburger.classList.remove("bx-menu"); // Remove bx-menu class
-          hamburger.classList.add("bx-x"); // Add bx-x class
-        } else {
-          hamburger.classList.remove("bx-x"); // Remove bx-x class
-          hamburger.classList.add("bx-menu"); // Add bx-menu class
-        }
-      });
-      function hideMobileNav() {
-        toggleCheckbox.checked = false; // Hide mobileNav
-        hamburger.classList.add("bx-menu");
-        hamburger.classList.remove("bx-x"); // Remove bx-x class
-      }
-      // hide mobile nav on scroll
-      var lastScrollY = window.scrollY;
-      window.addEventListener("scroll", () => {
-        if (window.scrollY !== lastScrollY) {
-          hideMobileNav();
-        }
-        lastScrollY = window.scrollY; // Update the last scroll position
-      });
-    </script>
+    
   </body>
 </html>
