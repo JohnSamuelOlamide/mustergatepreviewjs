@@ -2,7 +2,7 @@
   .wrapper {
     width: 100% !important;
     padding-left: 2.1rem !important;
-    padding-right: 2.1rem !important;
+    padding-right: 2rem !important;
   }
 }
 @media (min-width: 768px) {
