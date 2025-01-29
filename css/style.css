@@ -35,10 +35,10 @@ body {
 }
 
 .page-loader .spin {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
-  border: 13px solid rgb(225, 225, 225);
+  border: 10px solid rgb(225, 225, 225);
   border-bottom-color: var(--base-color);
   border-radius: 5000px;
   animation: spin 1s linear infinite;
@@ -534,7 +534,6 @@ footer .nav-links ul li a {
     border: 3px solid var(--accent-color);
   }
 }
-
 
 @keyframes spin {
   0% {
