@@ -307,9 +307,7 @@ footer .footer-upper {
   display: flex;
   justify-content: space-between;
 }
-footer .footer-upper .contact {
-  text-align: right;
-}
+
 footer .footer-upper .contact h3 {
   font-size: large;
   font-weight: 700;
@@ -318,6 +316,7 @@ footer .footer-upper .contact h3 {
   margin-bottom: 5px;
 }
 footer .footer-upper .contact a {
+  text-transform: lowercase;
   color: white;
   opacity: 0.42;
   font-weight: 600;
@@ -340,7 +339,6 @@ footer .nav-links ul li a {
 /* Responsive styles */
 @media (max-width: 400px) {
   footer .footer-upper {
-    
     flex-direction: column;
   }
 }
