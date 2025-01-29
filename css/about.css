@@ -161,7 +161,7 @@ section.coloured-bg {
 }
 section.coloured-bg .wrapper {
   padding-left: 5rem;
-  width: 65%;
+  width: 85%;
 }
 section.coloured-bg .wrapper h1 {
   font-size: 40px;
@@ -215,7 +215,7 @@ section.coloured-bg .wrapper p {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 60%;
+  width: 85%;
 }
 .about-content .wrapper h2 {
   font-size: 28px;
