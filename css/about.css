@@ -234,5 +234,5 @@ section.coloured-bg .wrapper p {
 
 .about-core-values span {
   font-weight: 700;
-  /* color: var(--accent-color); */
+  color: var(--accent-color);
 }

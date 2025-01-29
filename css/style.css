@@ -327,6 +327,9 @@ footer .nav-links ul li a {
   color: whitesmoke;
   font-size: large;
 }
+footer .nav-links ul li a:hover {
+  text-decoration: underline;
+}
 
 .copyright {
   color: white;
