@@ -11,7 +11,9 @@
   --white: white;
   --accent-color: #ecb602;
 }
-
+html {
+  overflow-y: hidden;
+}
 body {
   width: 100%;
   overflow-x: hidden !important;
@@ -48,6 +50,9 @@ body {
 }
 .mobile {
   display: none;
+}
+.desktop {
+  display: inline-block;
 }
 header {
   position: relative;
@@ -283,6 +288,7 @@ nav a:hover {
 footer {
   background: #1d1d1d;
   width: 100%;
+  /* flex-shrink: 0; */
 }
 
 footer .footer-container {
@@ -374,7 +380,7 @@ footer .nav-links ul li a:hover {
     height: 90px;
   }
   nav {
-    top: 80px;
+    top: 95px;
   }
   html:has(input#hamburger:checked) {
     header .hamburger {
@@ -383,9 +389,6 @@ footer .nav-links ul li a:hover {
   }
   header .hamburger {
     transform: scale(0.9);
-  }
-  nav {
-    width: 100%;
   }
 }
 @media (min-width: 530px) and (max-width: 610px) {
@@ -466,7 +469,11 @@ footer .nav-links ul li a:hover {
     transform: scale(0.8) !important;
   }
   .mobile {
-    display: block;
+    display: inline-block;
+  }
+
+  .desktop {
+    display: none;
   }
   .tagline {
     font-size: large;
