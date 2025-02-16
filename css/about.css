@@ -54,13 +54,13 @@ main {
 }
 
 .about-wrapper .side-block {
-  background-color: rgb(12 203 90);
+  background-color: #2bd2cb;
 }
 .vision-wrapper .side-block {
-  background-color: #940fa6;
+  background-color: #fd6d53;
 }
 .mission-wrapper .side-block {
-  background-color: var(--accent-color);
+  background-color: #fbb605;
 }
 .core-values-wrapper .side-block {
   background-color: grey;
