@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   }, 500); // Matches fade-out duration (optional)
   setTimeout(() => {
     loader.style.display = "none"; 
-    html.style.overflowY = "scroll"; 
+    html.style.overflowY = "auto"; 
   }, 1000); // Matches fade-out duration (optional)
 });
 
