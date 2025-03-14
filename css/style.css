@@ -477,8 +477,8 @@ footer .nav-links ul li a:hover {
     display: none;
   }
   .tagline {
-    font-size: large;
-    padding: 11% 0;
+    font-size: 1.4rem;
+    padding: 11% 5px;
   }
   .features {
     grid-template-columns: 1fr !important;
