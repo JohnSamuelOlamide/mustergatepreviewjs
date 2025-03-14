@@ -57,6 +57,7 @@ body {
 header {
   position: relative;
   width: 100%;
+  padding: 8px 0;
   background: var(--base-color);
   text-align: center;
 }
@@ -380,7 +381,7 @@ footer .nav-links ul li a:hover {
     height: 90px;
   }
   nav {
-    top: 95px;
+    top: 111px;
   }
   html:has(input#hamburger:checked) {
     header .hamburger {
@@ -456,7 +457,7 @@ footer .nav-links ul li a:hover {
 }
 @media (max-width: 530px) {
   header img {
-    width: calc(68% - 30px);
+    width: calc(73% - 30px);
     transform: translateY(3px);
     height: auto;
   }

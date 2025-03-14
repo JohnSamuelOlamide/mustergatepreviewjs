@@ -25,6 +25,7 @@ main {
   font-size: large;
 }
 .content p {
+  font-size: large;
   max-height: 3lh;
   overflow-y: hidden;
   display: -webkit-box;
@@ -69,7 +70,7 @@ main {
 .wrapper label {
   cursor: pointer;
   width: max-content;
-  font-size: 13px;
+  font-size: 16px;
   margin-top: 5px;
   font-weight: 700;
   display: block;
@@ -103,14 +104,15 @@ main {
   .wrapper svg {
     position: absolute;
     transform: scale(1.9);
-    left: -13%;
+    left: -9%;
     top: 35%;
+    padding: 0;
   }
   .wrapper {
     gap: 27px;
   }
   .wrapper .side-block {
-    width: 10%;
+    width: 13%;
   }
   .core-values-wrapper .content p span {
     line-height: 1.1;
